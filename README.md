@@ -10,7 +10,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 ## Informação do aluno
 
-    Nome: ...
+    Nome:Eduardo Cruz
 
 ## P1 - Para as seguintes questões, assinala a opção correta: (2.5v)
 
@@ -21,7 +21,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) chmod +r script.sh
     D) chmod -r script.sh
     
-    Resposta: ...
+    Resposta: A
 
   2. Como se define um comentário num script Bash?
 
@@ -30,7 +30,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) # comentário
     D) -- comentário
     
-    Resposta: ...
+    Resposta: C
    
   3. Que comando é usado para adicionar uma linha de texto ao final de um arquivo em Bash?
 
@@ -39,7 +39,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) echo "texto" | arquivo
     D) echo "texto" >> arquivo
     
-    Resposta: ...
+    Resposta: D
 
   4. Qual é o comando usado para ler a entrada do utilizador num script Bash?
 
@@ -48,7 +48,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) get
     D) scan
     
-    Resposta: ...
+    Resposta: A
 
   5. Que símbolo é usado para denotar uma variável em Bash?
 
@@ -57,24 +57,30 @@ Quando acabares, carrega no botão "Commit Changes".
     C) &
     D) #
     
-    Resposta: ...
+    Resposta: B
 
 ## P2 - Escreve scripts em Bash para realizar as seguintes instruções: (7.5v)
 
   1. Exibir a mensagem "Olá, Mundo!" no terminal.
 
     Resposta:
-    ...
+    echo "Olá, Mundo!"
     
   2. Receber dois números como entrada, e exibir a soma dos dois.
 
     Resposta:
-    ...
+    read numero1
+    read numero2
+    soma=$((numero1 + numero2
 
   3. Ler um valor numérico e imprimir uma mensagem a informar se o mesmo é par ou ímpar.
 
     Resposta:
-    ...
+    read numero
+    if [ $((numero %2))-eq 0 ]: then
+    echo "&numero é par"
+    else "&numero é impar"
+    fi
 
 ## P3 - Indica o que é realizado pelas seguintes instruções: (6v)
 
@@ -82,8 +88,8 @@ Quando acabares, carrega no botão "Commit Changes".
     
     echo "scale=2;22/7" | bc
 
-    Resposta:
-    ...
+    Resposta: definiu o numero de casa decimais em 2 
+   
      
   2. 
     
@@ -97,7 +103,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 
     Resposta:
-    ...
+    faz a soma de 1+2+3+4+5 consecultivamente e diz o resultado 
 
   3. 
     
@@ -110,16 +116,20 @@ Quando acabares, carrega no botão "Commit Changes".
     done
 
     Resposta:
-    ...
+    diminui o numero 10 comsecultivamente ate 0
 
 ## P4 - Realiza os seguintes exercícios, com respostas detalhadas: (4v)
 
   1. O que é um **shebang** (#!) e qual é a sua função num script?
 
     Resposta:
-    ...
+    indica a shell que deve executar via bash shell
 
   2. Como se utiliza a instrução 'if-else' num script Bash? Escreve um exemplo simples.
 
     Resposta:
-    ...
+     read numero
+    if [ $((numero %2))-eq 0 ]: then
+    echo "&numero é par"
+    else "&numero é impar"
+    fi
